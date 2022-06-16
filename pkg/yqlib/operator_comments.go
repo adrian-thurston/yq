@@ -15,6 +15,17 @@ type commentOpPreferences struct {
 	FootComment bool
 }
 
+func stripComments(context Context) {
+	for el := context.MatchingNodes.Front(); el != nil; el = el.Next() {
+		candidate := el.Value.(*CandidateNode)
+
+		candidate.LeadingContent = ""
+		candidate.Node.LineComment = ""
+		candidate.Node.HeadComment = ""
+		candidate.Node.FootComment = ""
+	}
+}
+
 func assignCommentsOperator(d *dataTreeNavigator, context Context, expressionNode *ExpressionNode) (Context, error) {
 
 	log.Debugf("AssignComments operator!")

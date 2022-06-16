@@ -104,12 +104,12 @@ func evaluateAll(cmd *cobra.Command, args []string) (cmdError error) {
 		defer frontMatterHandler.CleanUp()
 	}
 
-	allAtOnceEvaluator := yqlib.NewAllAtOnceEvaluator()
+	allAtOnceEvaluator := yqlib.NewAllAtOnceEvaluator(stripComments)
 
 	switch len(args) {
 	case 0:
 		if nullInput {
-			err = yqlib.NewStreamEvaluator().EvaluateNew(processExpression(expression), printer, "")
+			err = yqlib.NewStreamEvaluator(stripComments).EvaluateNew(processExpression(expression), printer, "")
 		} else {
 			cmd.Println(cmd.UsageString())
 			return nil

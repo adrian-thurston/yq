@@ -34,3 +34,5 @@ var completedSuccessfully = false
 var forceExpression = ""
 
 var expressionFile = ""
+
+var stripComments = false

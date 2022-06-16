@@ -101,7 +101,7 @@ func evaluateSequence(cmd *cobra.Command, args []string) (cmdError error) {
 	if err != nil {
 		return err
 	}
-	streamEvaluator := yqlib.NewStreamEvaluator()
+	streamEvaluator := yqlib.NewStreamEvaluator(stripComments)
 
 	if frontMatter != "" {
 		yqlib.GetLogger().Debug("using front matter handler")

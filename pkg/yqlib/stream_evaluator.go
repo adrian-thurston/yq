@@ -22,10 +22,14 @@ type StreamEvaluator interface {
 type streamEvaluator struct {
 	treeNavigator DataTreeNavigator
 	fileIndex     int
+	stripComments bool
 }
 
-func NewStreamEvaluator() StreamEvaluator {
-	return &streamEvaluator{treeNavigator: NewDataTreeNavigator()}
+func NewStreamEvaluator(stripComments bool) StreamEvaluator {
+	return &streamEvaluator{
+		treeNavigator: NewDataTreeNavigator(),
+		stripComments: stripComments,
+	}
 }
 
 func (s *streamEvaluator) EvaluateNew(expression string, printer Printer, leadingContent string) error {
@@ -122,6 +126,11 @@ func (s *streamEvaluator) Evaluate(filename string, reader io.Reader, node *Expr
 		inputList.PushBack(candidateNode)
 
 		result, errorParsing := s.treeNavigator.GetMatchingNodes(Context{MatchingNodes: inputList}, node)
+
+		if s.stripComments {
+			stripComments(result)
+		}
+
 		if errorParsing != nil {
 			return currentIndex, errorParsing
 		}
