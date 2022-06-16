@@ -1,7 +1,7 @@
 github.com/a8m/envsubst v1.3.0 h1:GmXKmVssap0YtlU3E230W98RWtWCyIZzjtf1apWWyAg=
 github.com/a8m/envsubst v1.3.0/go.mod h1:MVUTQNGQ3tsjOOtKCNd+fl8RzhsXcDvvAEzkhGtlsbY=
-github.com/adrian-thurston/yq/v4 v4.25.3-0.20220616105902-af479cb24b3f h1:fQHpKfjRosGM+p0YP8XYZIeQeW6ktSCtElMkY1mdzp8=
-github.com/adrian-thurston/yq/v4 v4.25.3-0.20220616105902-af479cb24b3f/go.mod h1:8H7eJWok85XX1bRdOeKiAeo3zdj8VB55hwEybs943MQ=
+github.com/adrian-thurston/yq/v4 v4.25.4 h1:d2yrTVmTN+mX8Hcx2gsb2MxASSmU9Or5JpSoUiiSaU8=
+github.com/adrian-thurston/yq/v4 v4.25.4/go.mod h1:/ZfNaQJAR/Igwr29nHLr4I2YvVik60xQdiny62rA56w=
 github.com/cpuguy83/go-md2man/v2 v2.0.1/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
