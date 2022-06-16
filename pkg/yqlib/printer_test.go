@@ -293,7 +293,7 @@ func TestPrinterScalarWithLeadingCont(t *testing.T) {
 	if err != nil {
 		panic(err)
 	}
-	streamEvaluator := NewStreamEvaluator()
+	streamEvaluator := NewStreamEvaluator(false)
 	_, err = streamEvaluator.Evaluate("sample", strings.NewReader(multiDocSample), node, printer, "# blah\n", NewYamlDecoder())
 	if err != nil {
 		panic(err)

@@ -171,7 +171,7 @@ func formatYaml(yaml string, filename string) string {
 	if err != nil {
 		panic(err)
 	}
-	streamEvaluator := NewStreamEvaluator()
+	streamEvaluator := NewStreamEvaluator(false)
 	_, err = streamEvaluator.Evaluate(filename, strings.NewReader(yaml), node, printer, "", NewYamlDecoder())
 	if err != nil {
 		panic(err)
