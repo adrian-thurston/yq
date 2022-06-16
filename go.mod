@@ -7,7 +7,6 @@ require (
 	github.com/goccy/go-yaml v1.9.5
 	github.com/jinzhu/copier v0.3.5
 	github.com/magiconair/properties v1.8.6
-	github.com/mikefarah/yq/v4 v4.0.0-00010101000000-000000000000
 	github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e
 	github.com/spf13/cobra v1.4.0
 	github.com/timtadh/lexmachine v0.2.2
@@ -29,4 +28,4 @@ require (
 
 go 1.18
 
-replace github.com/mikefarah/yq/v4 v4.0.0-00010101000000-000000000000 => github.com/adrian-thurston/yq/v4 v4.25.4
+replace github.com/mikefarah/yq/v4 => github.com/adrian-thurston/yq/v4 try2
