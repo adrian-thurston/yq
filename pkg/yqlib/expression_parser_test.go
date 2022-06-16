@@ -3,7 +3,7 @@ package yqlib
 import (
 	"testing"
 
-	"github.com/mikefarah/yq/v4/test"
+	"github.com/adrian-thurston/yq/v4/test"
 )
 
 func getExpressionParser() ExpressionParserInterface {

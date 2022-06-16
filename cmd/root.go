@@ -3,7 +3,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/mikefarah/yq/v4/pkg/yqlib"
+	"github.com/adrian-thurston/yq/v4/pkg/yqlib"
 	"github.com/spf13/cobra"
 	logging "gopkg.in/op/go-logging.v1"
 )

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/mikefarah/yq/v4/test"
+	"github.com/adrian-thurston/yq/v4/test"
 )
 
 var complexExpectYaml = `D0, P[], (!!map)::a: Easy! as one two three

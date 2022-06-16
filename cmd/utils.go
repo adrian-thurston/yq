@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/mikefarah/yq/v4/pkg/yqlib"
+	"github.com/adrian-thurston/yq/v4/pkg/yqlib"
 	"github.com/spf13/cobra"
 	"gopkg.in/op/go-logging.v1"
 )
