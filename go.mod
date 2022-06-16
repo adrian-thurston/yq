@@ -29,4 +29,4 @@ require (
 
 go 1.18
 
-replace github.com/mikefarah/yq/v4 => github.com/adrian-thurston/yq/v4 v4.25.4
+replace github.com/mikefarah/yq/v4 v4.0.0-00010101000000-000000000000 => github.com/adrian-thurston/yq/v4 v4.25.4
