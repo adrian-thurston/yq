@@ -94,7 +94,7 @@ yq -P sample.json
 
 	rootCmd.PersistentFlags().StringVarP(&expressionFile, "from-file", "", "", "Load expression from specified file.")
 
-	rootCmd.PersistentFlags().BoolVarP(&stripComments, "strip-comments", "", false, "Strip comments from output.")
+	rootCmd.PersistentFlags().BoolVarP(&stripComments, "strip-comments", "t", false, "Strip comments from output.")
 
 	rootCmd.AddCommand(
 		createEvaluateSequenceCommand(),
